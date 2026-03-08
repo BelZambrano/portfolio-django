@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <p class="tag">Trabajo Social + Tecnología</p>
+        <h1>Belén Zambrano</h1>
+        <h2>Desarrolladora Full Stack en formación</h2>
+        <p class="description">
+            Construyendo soluciones tecnológicas con enfoque humano, social y orientado a resolver problemas reales.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Ver proyectos</a>
+            <a href="#" class="btn btn-secondary">Contacto</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="{% static 'images/panda.png' %}" alt="Avatar panda de Belén">
+    </div>
+</section>
+{% endblock %}

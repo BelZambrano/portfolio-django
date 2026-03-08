@@ -1,0 +1,291 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+hr {
+    display: none;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: #1d3557;
+    padding: 20px 30px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a8dadc;
+}
+
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.container {
+    padding: 60px 80px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HERO HOME
+========================= */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    min-height: 80vh;
+    padding: 80px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #a8dadc;
+    color: #1d3557;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1d3557;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #16324f;
+}
+
+.btn-secondary {
+    background-color: #f1f3f5;
+    color: #1d3557;
+    border: 2px solid #1d3557;
+}
+
+.btn-secondary:hover {
+    background-color: #e9ecef;
+}
+
+
+/* =========================
+   IMAGEN HERO
+========================= */
+
+.hero-image {
+    background-color: #f1f3f5;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.hero-image img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    background-color: #f1f3f5;
+    padding: 18px 22px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #1d3557;
+}
+
+.contact-item strong {
+    color: #1d3557;
+}
+
+.contact-item a {
+    color: #1d3557;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PÁGINAS INTERNAS
+========================= */
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container p {
+    max-width: 800px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 18px 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 40px 25px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 25px;
+        min-height: auto;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        padding: 25px;
+    }
+
+    .hero-image img {
+        max-width: 240px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
