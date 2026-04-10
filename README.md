@@ -1,4 +1,4 @@
-# Portfolio Django - Belén Zambrano
+# Portafolio Django - Belén Zambrano
 
 Sitio web personal desarrollado con Django, HTML y CSS como parte de mi proceso de aprendizaje en desarrollo Full Stack Python.
 
