@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<section class="hero">
+<section class="hero fade-up">
     <div class="hero-text">
         <p class="tag">Trabajo Social + Tecnología</p>
         <h1>Belén Zambrano</h1>
@@ -12,13 +12,15 @@
         </p>
 
         <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Ver proyectos</a>
-            <a href="#" class="btn btn-secondary">Contacto</a>
+            <a href="{% url 'projects' %}" class="btn btn-primary">Ver proyectos</a>
+            <a href="{% url 'contact' %}" class="btn btn-secondary">Contacto</a>
         </div>
     </div>
 
     <div class="hero-image">
-        <img src="{% static 'images/panda.png' %}" alt="Avatar panda de Belén">
+        <div class="hero-image-box">
+            <img src="{% static 'images/panda.png' %}" alt="Avatar panda de Belén">
+        </div>
     </div>
 </section>
 {% endblock %}

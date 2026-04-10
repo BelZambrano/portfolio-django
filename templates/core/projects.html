@@ -1,7 +1,91 @@
 {% extends "base.html" %}
+
 {% block content %}
-<div class="container">
-  <h1>Proyectos</h1>
-  <p>Aquí irán mis proyectos en Django, Python y bases de datos.</p>
-</div>
+<section class="container fade-up">
+    <div class="projects-header">
+        <h1>Proyectos</h1>
+        <p class="projects-intro">
+            Algunos de los proyectos que he desarrollado durante mi proceso de aprendizaje en programación, desarrollo web y lógica aplicada a problemas reales.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <article class="project-card">
+            <div class="project-image project-image-inventory">
+                <span>Sistema de Inventario</span>
+            </div>
+
+            <div class="project-content">
+                <h2>Sistema de Inventario</h2>
+                <p>
+                    Aplicación en Python para gestionar productos, controlar stock y generar reportes básicos para un almacén.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Lógica</span>
+                    <span>Inventario</span>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/BelZambrano/Proyecto-ABP-3---Sistema-de-Inventario" target="_blank" class="project-btn primary">
+                        Ver GitHub
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-image project-image-clients">
+                <span>Gestión de Clientes</span>
+            </div>
+
+            <div class="project-content">
+                <h2>Gestión de Clientes</h2>
+                <p>
+                    Sistema desarrollado en Python con enfoque en programación orientada a objetos, herencia y persistencia en archivos JSON.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>POO</span>
+                    <span>JSON</span>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/BelZambrano/Proyecto-ABP4-SistemaGestiondeClientes" target="_blank" class="project-btn primary">
+                        Ver GitHub
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-image project-image-portfolio">
+                <span>Portafolio Django</span>
+            </div>
+
+            <div class="project-content">
+                <h2>Portafolio Django</h2>
+                <p>
+                    Sitio web personal desarrollado con Django para presentar mi perfil, proyectos y formas de contacto en un formato profesional.
+                </p>
+
+                <div class="project-tags">
+                    <span>Django</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/BelZambrano/portfolio-django" target="_blank" class="project-btn primary">
+                        Ver GitHub
+                    </a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
 {% endblock %}
